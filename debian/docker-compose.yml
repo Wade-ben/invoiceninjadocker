@@ -33,7 +33,7 @@ services:
     image: nginx:alpine
     restart: unless-stopped
     ports:
-      - "82:80"
+      - "8222:80"
     volumes:
       - ./nginx:/etc/nginx/conf.d:ro
       - app_public:/var/www/html/public:ro
